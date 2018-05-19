@@ -25,7 +25,7 @@ pipeline {
 		
 			steps {
 				withMaven(maven : 'maven') {
-					sh 'mvn clean package cargo:redploy -P dev'
+					sh 'mvn clean package cargo:redeploy -P dev'
 				}				
 			} 
 	    }	    	
